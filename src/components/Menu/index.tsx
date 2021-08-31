@@ -12,12 +12,12 @@ const items = (i18n: I18n) => [
   {
     name: i18n._(t`Docs`),
     description: i18n._(t`Documentation for users of Sushi.`),
-    href: 'https://docs.sushi.com',
+    href: 'https://docs.avewsap.io',
   },
   {
     name: i18n._(t`Dev`),
     description: i18n._(t`Documentation for developers of Sushi.`),
-    href: 'https://dev.sushi.com',
+    href: 'https://dev.avewsap.io',
   },
   {
     name: i18n._(t`Open Source`),

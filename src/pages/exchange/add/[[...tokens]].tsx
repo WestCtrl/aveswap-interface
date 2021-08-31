@@ -315,11 +315,11 @@ export default function Add() {
   return (
     <>
       <Head>
-        <title>Add Liquidity | Sushi</title>
+        <title>Add Liquidity | Ave</title>
         <meta
           key="description"
           name="description"
-          content="Add liquidity to the SushiSwap AMM to enable gas optimised and low slippage trades across countless networks"
+          content="Add liquidity to the Aveswap AMM to enable gas optimised and low slippage trades across countless networks"
         />
       </Head>
 
@@ -362,9 +362,7 @@ export default function Add() {
               <>
                 <b>{i18n._(t`Tip:`)}</b>{' '}
                 {i18n._(
-                  t`By adding liquidity you'll earn 0.25% of all trades on this pair
-                proportional to your share of the pool. Fees are added to the pool, accrue in real time and can be
-                claimed by withdrawing your liquidity.`
+                  t`By adding liquidity you'll earn 0.25% of all trades on this pair proportional to your share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.`
                 )}
               </>
             )

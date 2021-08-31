@@ -60,7 +60,44 @@ input:focus {
 .striped-background {
   background: repeating-linear-gradient(45deg, #161522, #161522 10px, #0d0415 10px, #0d0415 20px);
 }
+.bg-dark-800 {
+  background-color:#282b2f;
+}
+.bg-dark-900 {
+    background-color: #191B1F;
+}
+.bg-blue {
+  background: #dea240;
+  color: #e2dcd3;
+}
+.opacity-80{
+  opacity: 1;
+}
+.bg-gradient-to-r{
+  background-image: none;
+  background-color: #dea240;
+}
+.bg-dark-700 {
+  --tw-bg-opacity: 1;
+  background-color: #575b61;
+}
+a {
+  color: #dda240;
+}
+.border-gradient-r-blue-pink-dark-900 {
+    background: linear-gradient( to right, #08090a, #191b1f ), linear-gradient(to right, #d59d3e, #d59d3e);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
 
+@media(min-width: 640px){
+  body {
+    background-image: url(https://app.aveswap.io/static/media/1200for_dark_mode.2d4c3729.png);
+    background-position: bottom left;
+    background-size: auto 90vh;
+    background-repeat: no-repeat;
+  }
+}
 /* *::-webkit-scrollbar {
   width: var(--scrollbar-width);
 }
