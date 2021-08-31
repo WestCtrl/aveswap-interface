@@ -1,6 +1,8 @@
 :root {
-    --primary: #0D0415;
-    --text-primary: #BFBFBF;
+    --primary: #282b2f;
+    --text-primary: #bfbfbf;
+    --secondary: #fff;
+    --text-secondary: #fff;
     --font-sans: "DM Sans", -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', sans-serif;
     --scrollbar-width: 14px;
 }

@@ -157,7 +157,7 @@ function Create() {
   return (
     <>
       <Head>
-        <title>Create Lending Pair | Kashi by Sushi</title>
+        <title>Create Lending Pair | Kashi by Ave</title>
         <meta key="description" name="description" content="Create Lending Pair on Kashi by Sushi" />
       </Head>
       <Card
