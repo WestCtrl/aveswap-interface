@@ -135,7 +135,7 @@ export default function CurrencyInputPanel({
         {!hideInput && (
           <div
             className={classNames(
-              'flex items-center w-full space-x-3 rounded bg-dark-900 focus:bg-dark-700 p-3 sm:w-3/5'
+              'flex items-center w-full space-x-3 rounded bg-dark-900 focus:bg-dark-700 p-3 sm:w-3/5 amount-input'
               // showMaxButton && selectedCurrencyBalance && 'px-3'
             )}
           >
@@ -149,13 +149,6 @@ export default function CurrencyInputPanel({
                   {i18n._(t`Max`)}
                 </Button>
               )}
-              <Input.Numeric
-                id="token-amount-input"
-                value={value}
-                onUserInput={(val) => {
-                  onUserInput(val)
-                }}
-              />
               {!hideBalance && currency && selectedCurrencyBalance ? (
                 <div className="flex flex-col">
                   <div onClick={onMax} className="text-xs font-medium text-right cursor-pointer text-low-emphesis">
@@ -170,6 +163,13 @@ export default function CurrencyInputPanel({
                   <FiatValue fiatValue={fiatValue} priceImpact={priceImpact} />
                 </div>
               ) : null}
+              <Input.Numeric
+                id="token-amount-input"
+                value={value}
+                onUserInput={(val) => {
+                  onUserInput(val)
+                }}
+              />
             </>
           </div>
         )}

@@ -11,41 +11,25 @@ import NavLink from '../NavLink'
 
 const items = (i18n: I18n) => [
   {
-    name: i18n._(t`Docs`),
-    description: i18n._(t`Documentation for users of Sushi.`),
+    name: i18n._(t`About`),
     href: 'https://docs.avewsap.io',
     external: true,
   },
   {
-    name: i18n._(t`Dev`),
-    description: i18n._(t`Documentation for developers of Sushi.`),
+    name: i18n._(t`Code`),
     href: 'https://dev.avewsap.io',
     external: true,
   },
-  {
-    name: i18n._(t`Open Source`),
-    description: i18n._(t`Sushi is a supporter of Open Source.`),
-    href: 'https://github.com/sushiswap',
-    external: true,
-  },
-  {
-    name: i18n._(t`Tools`),
-    description: i18n._(t`Tools to optimize your workflow.`),
-    href: '/tools',
-    external: false,
-  },
-  {
-    name: i18n._(t`Discord`),
-    description: i18n._(t`Join the community on Discord.`),
-    href: 'https://discord.gg/NVPXN4e',
-    external: true,
-  },
-  {
-    name: i18n._(t`Vesting`),
-    description: i18n._(t`Weekly unlocks from the vesting period.`),
-    href: '/vesting',
-    external: false,
-  },
+  // {
+  //   name: i18n._(t`Language`),
+  //   href: 'https://github.com/sushiswap',
+  //   external: true,
+  // },
+  // {
+  //   name: i18n._(t`Light Theme`),
+  //   href: '/tools',
+  //   external: false,
+  // },
 ]
 
 export default function Menu() {
@@ -65,7 +49,7 @@ export default function Menu() {
             <svg
               width="16px"
               height="16px"
-              className="inline-flex items-center w-5 h-5 ml-2"
+              className="inline-flex items-center w-5 h-5 ml-2 more-button"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

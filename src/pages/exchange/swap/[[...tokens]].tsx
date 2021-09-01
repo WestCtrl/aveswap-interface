@@ -477,7 +477,7 @@ export default function Swap() {
             <CurrencyInputPanel
               // priceImpact={priceImpact}
               label={
-                independentField === Field.OUTPUT && !showWrap ? i18n._(t`Swap From (est.):`) : i18n._(t`Swap From:`)
+                independentField === Field.OUTPUT && !showWrap ? '': ''
               }
               value={formattedAmounts[Field.INPUT]}
               showMaxButton={showMaxButton}
@@ -490,9 +490,9 @@ export default function Swap() {
               showCommonBases={true}
               id="swap-currency-input"
             />
-            <AutoColumn justify="space-between" className="py-3">
+            <AutoColumn justify="center" className="py-3">
               <div
-                className={classNames(isExpertMode ? 'justify-between' : 'flex-start', 'px-4 flex-wrap w-full flex')}
+                className={classNames(isExpertMode ? 'justify-between' : 'flex-start', 'px-4 flex-wrap w-full flex swap-arrows')}
               >
                 <button
                   className="z-10 -mt-6 -mb-6 rounded-full"
@@ -503,16 +503,11 @@ export default function Swap() {
                 >
                   <div className="rounded-full bg-dark-900 p-3px">
                     <div
-                      className="p-3 rounded-full bg-dark-800 hover:bg-dark-700"
+                      className="p-1 rounded-full bg-dark-800 hover:bg-dark-700"
                       onMouseEnter={() => setAnimateSwapArrows(true)}
                       onMouseLeave={() => setAnimateSwapArrows(false)}
                     >
-                      <Lottie
-                        animationData={swapArrowsAnimationData}
-                        autoplay={animateSwapArrows}
-                        loop={false}
-                        style={{ width: 32, height: 32 }}
-                      />
+                      <ArrowDownIcon className="w-[20px] h-[20px]"/>
                     </div>
                   </div>
                 </button>
@@ -539,7 +534,7 @@ export default function Swap() {
               <CurrencyInputPanel
                 value={formattedAmounts[Field.OUTPUT]}
                 onUserInput={handleTypeOutput}
-                label={independentField === Field.INPUT && !showWrap ? i18n._(t`Swap To (est.):`) : i18n._(t`Swap To:`)}
+                label={independentField === Field.INPUT && !showWrap ? '' : ''}
                 showMaxButton={false}
                 hideBalance={false}
                 fiatValue={fiatValueOutput ?? undefined}

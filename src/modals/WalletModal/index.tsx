@@ -291,7 +291,7 @@ export default function WalletModal({
               tryActivation={tryActivation}
             />
           ) : (
-            <div className="flex flex-col space-y-5 overflow-y-auto">{getOptions()}</div>
+            <div className="flex flex-col space-y-1 overflow-y-auto">{getOptions()}</div>
           )}
           {walletView !== WALLET_VIEWS.PENDING && (
             <div className="flex flex-col text-center">

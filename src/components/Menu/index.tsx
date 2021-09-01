@@ -10,30 +10,21 @@ import { useLingui } from '@lingui/react'
 
 const items = (i18n: I18n) => [
   {
-    name: i18n._(t`Docs`),
-    description: i18n._(t`Documentation for users of Sushi.`),
+    name: i18n._(t`About`),
     href: 'https://docs.avewsap.io',
   },
   {
-    name: i18n._(t`Dev`),
-    description: i18n._(t`Documentation for developers of Sushi.`),
-    href: 'https://dev.avewsap.io',
+    name: i18n._(t`Code`),
+    href: 'https://github.com/Aveswap',
   },
-  {
-    name: i18n._(t`Open Source`),
-    description: i18n._(t`Sushi is a supporter of Open Source.`),
-    href: 'https://github.com/sushiswap',
-  },
-  {
-    name: i18n._(t`Tools`),
-    description: i18n._(t`Tools to optimize your workflow.`),
-    href: '/tools',
-  },
-  {
-    name: i18n._(t`Discord`),
-    description: i18n._(t`Join the community on Discord.`),
-    href: 'https://discord.gg/NVPXN4e',
-  },
+  // {
+  //   name: i18n._(t`Language`),
+  //   href: '/tools',
+  // },
+  // {
+  //   name: i18n._(t`Light Theme`),
+  //   href: 'https://discord.gg/NVPXN4e',
+  // },
 ]
 
 export default function Menu() {
@@ -82,7 +73,6 @@ export default function Menu() {
                       className="block p-3 -m-3 transition duration-150 ease-in-out rounded-md hover:bg-dark-800"
                     >
                       <p className="text-base font-medium text-high-emphesis">{item.name}</p>
-                      <p className="mt-1 text-sm text-secondary">{item.description}</p>
                     </ExternalLink>
                   ))}
                 </div>

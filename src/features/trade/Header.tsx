@@ -37,17 +37,17 @@ const ExchangeHeader: FC<ExchangeHeaderProps> = ({ input, output, allowedSlippag
 
   return (
     <div className="flex items-center justify-between mb-4 space-x-3">
-      <div className="grid grid-cols-2 rounded p-3px bg-dark-800 h-[46px]">
+      <div className="grid grid-cols-2 rounded p-3px h-[46px]">
         <NavLink
-          activeClassName="font-bold border rounded text-high-emphesis border-dark-800 bg-gradient-to-r from-opaque-blue to-opaque-pink hover:from-blue hover:to-pink"
+          activeClassName="show-active font-bold rounded text-high-emphesis from-opaque-blue to-opaque-pink hover:from-blue hover:to-pink"
           href={{
             pathname: '/swap',
             query: getQuery(input, output),
           }}
         >
-          <a className="flex items-center justify-center px-4 text-base font-medium text-center rounded-md text-secondary hover:text-high-emphesis ">
+          <span className="hide-not-active flex items-center justify-center px-4 text-base font-medium text-center rounded-md text-secondary text-high-emphesis ">
             {i18n._(t`Swap`)}
-          </a>
+          </span>
         </NavLink>
         {/*<NavLink
           activeClassName="font-bold border rounded text-high-emphesis border-dark-800 bg-gradient-to-r from-opaque-blue to-opaque-pink hover:from-blue hover:to-pink"
@@ -61,24 +61,24 @@ const ExchangeHeader: FC<ExchangeHeaderProps> = ({ input, output, allowedSlippag
           </a>
         </NavLink>*/}
         <NavLink
-          activeClassName="font-bold border rounded text-high-emphesis border-dark-800 bg-gradient-to-r from-opaque-blue to-opaque-pink hover:from-blue hover:to-pink"
+          activeClassName="show-active font-bold rounded text-high-emphesis from-opaque-blue to-opaque-pink hover:from-blue hover:to-pink"
           href={`/${!isRemove ? 'add' : 'remove'}${input ? `/${currencyId(input)}` : ''}${
             output ? `/${currencyId(output)}` : ''
           }`}
         >
-          <a className="flex items-center justify-center px-4 text-base font-medium text-center rounded-md text-secondary hover:text-high-emphesis">
+          <span className="hide-not-active flex items-center justify-center px-4 text-base font-medium text-center rounded-md text-secondary text-high-emphesis">
             {i18n._(t`Liquidity`)}
-          </a>
+          </span>
         </NavLink>
       </div>
       <div className="flex items-center">
         <div className="grid grid-flow-col gap-1">
-          {isLimitOrder && (
+          {/*{isLimitOrder && (
             <div className="items-center h-full w-full cursor-pointer hover:bg-dark-800 rounded px-3 py-1.5">
               <MyOrders />
             </div>
-          )}
-          {chainId === ChainId.MAINNET && (
+          )}*/}
+          {/*{chainId === ChainId.MAINNET && (
             <div className="items-center hidden w-full h-full px-3 space-x-3 rounded cursor-pointer text-green text-opacity-80 hover:text-opacity-100 md:flex hover:bg-dark-800">
               <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -91,7 +91,7 @@ const ExchangeHeader: FC<ExchangeHeaderProps> = ({ input, output, allowedSlippag
                 <Gas />
               </div>
             </div>
-          )}
+          )}*/}
           <div className="relative flex items-center w-full h-full rounded hover:bg-dark-800">
             <Settings placeholderSlippage={allowedSlippage} />
           </div>
