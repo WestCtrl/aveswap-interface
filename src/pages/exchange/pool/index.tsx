@@ -89,7 +89,7 @@ export default function Pool() {
   return (
     <Container id="pool-page" className="py-4 space-y-6 md:py-8 lg:py-12" maxWidth="2xl">
       <Head>
-        <title>Pool | Sushi</title>
+        <title>Pool | Ave</title>
         <meta
           key="description"
           name="description"
@@ -125,7 +125,7 @@ export default function Pool() {
             <>
               {/* <div className="flex items-center justify-center">
                   <ExternalLink
-                    href={"https://analytics.sushi.com/user/" + account}
+                    href={"https://analytics.avewsap.io/user/" + account}
                   >
                     Account analytics and accrued fees <span> ↗</span>
                   </ExternalLink>
@@ -143,7 +143,7 @@ export default function Pool() {
               <div className="px-4 py-2">{i18n._(t`No liquidity was found. `)}</div>
             </Empty>
           )}
-          <div className={classNames('grid gap-4', migrationSupported ? 'grid-cols-3' : 'grid-cols-2')}>
+          <div className={classNames('grid gap-4', migrationSupported ? 'grid-cols-2' : 'grid-cols-2')}>
             <Button
               id="add-pool-button"
               color="gradient"
@@ -156,11 +156,11 @@ export default function Pool() {
               {i18n._(t`Import`)}
             </Button>
 
-            {migrationSupported && (
+            {/*{migrationSupported && (
               <Button id="create-pool-button" color="gray" onClick={() => router.push(`/migrate`)}>
                 {i18n._(t`Migrate`)}
               </Button>
-            )}
+            )}*/}
           </div>
         </div>
       </div>
