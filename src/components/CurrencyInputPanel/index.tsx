@@ -43,7 +43,7 @@ export default function CurrencyInputPanel({
   onUserInput,
   onMax,
   showMaxButton,
-  label = 'Input',
+  label = '',
   onCurrencySelect,
   currency,
   disableCurrencySelect = false,

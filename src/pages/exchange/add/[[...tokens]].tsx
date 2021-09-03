@@ -414,10 +414,10 @@ export default function Add() {
                   showCommonBases
                 />
 
-                <AutoColumn justify="space-between" className="py-2.5">
+                <AutoColumn justify="space-between" className="py-1">
                   <AutoRow justify={isExpertMode ? 'space-between' : 'center'} style={{ padding: '0 1rem' }}>
                     <button className="z-10 -mt-6 -mb-6 rounded-full cursor-default bg-dark-900 p-3px">
-                      <div className="p-3 rounded-full bg-dark-800">
+                      <div className="p-1 rounded-full bg-dark-800">
                         <Plus size="20" />
                       </div>
                     </button>

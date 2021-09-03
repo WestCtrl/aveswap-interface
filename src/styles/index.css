@@ -65,17 +65,21 @@ input:focus {
   border-radius: 24px;
 }
 .bg-dark-900 {
-    background-color: #191B1F;
+  background-color: #191B1F;
+  border-radius: 24px;
+}
+.bg-dark-1000 {
+    background-color: #181818;
     border-radius: 24px;
+}
+#swap-page .bg-dark-900, #swap-currency-input .bg-dark-900, #swap-currency-output .bg-dark-900 {
+  border-radius: 24px;
 }
 #swap-page {
     max-width: 480px;
 }
 #swap-currency-input img, #swap-currency-output img {
     border-radius: 50%;
-}
-#add-liquidity-input-tokena img, #add-liquidity-input-tokenb img {
-  border-radius: 50%;
 }
 #add-liquidity-page, #pool-page {
     max-width: 640px;
@@ -93,7 +97,7 @@ input:focus {
   background-color: #dea240;
   border-radius: 24px;
 }
-.bg-dark-700 {
+button.bg-dark-700 {
   --tw-bg-opacity: 1;
   border-radius: 24px;
   border: none;
@@ -120,18 +124,11 @@ a {
   }
 }
 
-.rounded-full {
-    border-radius: 50% !important;
-}
 .-mb-6 {
     margin-bottom: -1rem;
 }
 .-mt-6 {
     margin-top: -1rem;
-}
-.py-3 {
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
 }
 .more-button{
   width: 100%;
@@ -184,6 +181,23 @@ a {
 }
 .amount-input input {
   text-align: right;
+}
+.fixed.bottom-0 {
+    --tw-bg-opacity: 1;
+    background-color: #282b2f;
+}
+.max-w-xs {
+  max-width: 13rem;
+}
+.ring-1 {
+  box-shadow: none;
+}
+.rounded {
+    border-radius: 24px;
+}
+.bg-purple {
+    --tw-bg-opacity: 1;
+    background-color: #191b1f;
 }
 /* *::-webkit-scrollbar {
   width: var(--scrollbar-width);
