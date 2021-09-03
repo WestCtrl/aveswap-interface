@@ -74,6 +74,9 @@ input:focus {
 #swap-currency-input img, #swap-currency-output img {
     border-radius: 50%;
 }
+#add-liquidity-input-tokena img, #add-liquidity-input-tokenb img {
+  border-radius: 50%;
+}
 #add-liquidity-page, #pool-page {
     max-width: 640px;
 }
